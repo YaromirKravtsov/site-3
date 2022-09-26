@@ -31,9 +31,23 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-document.getElementById('video').addEventListener("click", function(){
+document.getElementById('video').onclick = function(){
+  document.getElementById('video__row').innerHTML = ` <div class="video__row">
+  <video controls src="assets/img/20220926143924.mp4" class="video"></video>
+  <div id="close"><img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" alt="" class="close" ></div>
+</div>`;
 
-  document.getElementById('video__row').innerHTML = `   <div class="video__iteam"><video controls src="assets/img/20220926143924.mp4" class="video"></video></div>  `
+document.getElementById('close').onclick = function(){
+  console.log('close');
+    document.getElementById('video__row').innerHTML = ` <img src="assets/img/content4-img.png" alt="" class="content3__row-img" id="video">
+     <div class="content3__row-text">WATCH OUR STORY</div>`;
 
-});
+  } 
+
+}
+
+
+
+
+
 
