@@ -525,6 +525,7 @@ width: 540px;
 	letter-spacing: 0.05em;
 	color: #ffffff;	
 	margin-top: 30px;
+	width: 170px;
 }
 
 /* -------------------------------------------------------------4----------------------------------------------------------- */
@@ -1414,18 +1415,24 @@ margin-bottom: 50px;
 
 
 /* video */
-.video__iteam {
-}
+
 .video {
     width: 	800px;
-	/* height: 400px; */
+
 }
 .video__row{
 	display: flex;
 	flex-direction: row;
+
 }
-
-
+.close{
+	position: absolute;
+	z-index: 100000;
+	width: 40px;
+	height: 40px;
+	margin-left: -50px;
+	margin-top: 10px;
+}
 @media (max-width:820px){
 	.video {
 width: 600px;
